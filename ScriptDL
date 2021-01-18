@@ -1,0 +1,13 @@
+#!/bin/bash
+
+files=($(< filereport_read_run_PRJEB24932_tsv.txt))
+
+    for file in "${files[@]}"; do 
+        if [[ "$file" == ftp.sra.ebi.ac.uk/vol1/fastq/*fastq.gz ]]
+        then
+            IFS=';'
+            for url in $file; do 
+            wget ftp://$url
+            done
+        fi
+    done
