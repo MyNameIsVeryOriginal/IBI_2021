@@ -7,7 +7,7 @@ Ce-ci est un repo Github à but éducatif en contexte de l'unité d'enseignement
 
 ### Groupe 2E
 
-- DROUSSI Sara <sara.droussi@universite-paris-saclay.fr >
+- DROUSSI Sara <sara.droussi@universite-paris-saclay.fr>
 - NGUYEN Minh Kha <minh-kha.nguyen@universite-paris-saclay.fr>
 
 ---
