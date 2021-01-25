@@ -1,0 +1,16 @@
+#BwaMapping
+p=$1;
+
+ # input files
+f1=/Path_to_read_files/${p}.fastq.gz;
+
+REFERENCE=/Path_to_reference/reference.fa;
+
+ # map the reads with bwa mem
+
+for fastqfile in *.fastq.gz
+
+do 
+bwa mem -t 2 -w 600 -R "@RG\tID:${p}\tSM:${p}\tPL:ILLUMINA" ${REFERENCE} ${f1} > ${p}_bwa_mem.sam &
+done
+
