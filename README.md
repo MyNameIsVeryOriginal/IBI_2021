@@ -12,7 +12,6 @@ Ce-ci est un repo Github à but éducatif en contexte de l'unité d'enseignement
 - Adame Benbouziane <adame.benbouziane@u-psud.fr>
 - NGUYEN Minh Kha <minh-kha.nguyen@universite-paris-saclay.fr>
 
-
 ---
 
 ## Documentations et Sources
