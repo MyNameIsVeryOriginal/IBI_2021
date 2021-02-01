@@ -6,7 +6,6 @@ md5sum *fastq.gz > md5sum.md5
 md5=($(< md5sum.md5))
 files=($(< filereport_read_run_PRJEB24932_tsv.txt))
 
-
 for i in "${!md5[@]}"; do
     for j in "${!files[@]}"; do
         if ! (($i % 2))
@@ -22,12 +21,8 @@ for i in "${!md5[@]}"; do
                         printf "file [%s] is verified \n" "${md5[i+1]}"
                         break
                     fi
-                    #printf "from .md5 ${md5[i]} \n"
-                    #printf 'from .tsv %s\n' "$k"
                 done
             fi
         fi
     done
 done
-
-
